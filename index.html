@@ -130,7 +130,34 @@
       <li>A link to the assignment's deployed, live site on GitHub Pages.</li>
     </ol>
   </p>
+  <div class="overlay" id="overlay" hidden>
+    <div class="confirm-box">
+      <div onclick="closeConfirmBox()" class="close">&#10006;</div>
+      <h2>Confirmation</h2>
+      <p>Are you sure to execute this action?</p>
+      <button onclick="isConfirm(true)">Yes</button>
+      <button onclick="isConfirm(false)">No</button>
+    </div>
+  </div>
+  <button onclick="showConfirmBox()">Delete</button>
+  <p>Full tutorial here: <a href="">JavaScript - Create confirmation box with yes and no options</a></p>
+  <script>
+  function showConfirmBox() {
+    document.getElementById("overlay").hidden = false;
+  }
+  function closeConfirmBox() {
+    document.getElementById("overlay").hidden = true;
+  }
 
+  function isConfirm(answer) {
+    if (answer) {
+      alert("Answer is yes");
+    } else {
+      alert("Answer is no");
+    }
+    closeConfirmBox();
+  }
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"
     integrity="sha512-/Swpp6aCQ0smuZ+zpklJqMClcUlvxhpLf9aAcM7JjJrj2waCU4dikm3biOtMVAflOOeniW9qzaNXNrbOAOWFCw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
