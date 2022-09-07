@@ -1,8 +1,7 @@
-/* **********************************************************************************************
+/*
 Author: Matthew Kopay
-Last Modified:
-Assignment: Module 2 - Using JavaScript to make small talk with the user 
-************************************************************************************************* */
+COMM6338 Module 2 Assignment 2 Creating a Greeting Using Javascript
+*/
 
 function greet() {
 
