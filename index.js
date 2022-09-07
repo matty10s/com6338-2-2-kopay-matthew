@@ -13,12 +13,12 @@ function greet() {
     var currentYear = new Date().getFullYear();
     
     if (confirmBday) {
-        bYear = currentYear - age;
+        birthYear = currentYear - age;
     }
     else {
-        bYear = currentYear - age - 1;
+        birthYear = currentYear - age - 1;
     }
 
-    alert('You were born in: ' + bYear);
+    alert('You were born in: ' + birthYear);
 
 }
